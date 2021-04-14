@@ -7,7 +7,6 @@ White: #FFF
 
 */
 
-/* ------- general setting ------- */
 body {
     width: 100%;
     margin: 0;
@@ -16,25 +15,13 @@ body {
     font-size: 20px;
 }
 
-h1 {
-    color: white;
-    font-size: 3.5em;
-    text-align: center;
-    margin: 5px;
-}
-h2 {
-    text-align: center;
-    padding: 0 25px;
-    margin-top: -15px;
+/* ------- nav section ------- */
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
-hr {
-    width: 250px;
-    border:2px solid #00B172;
-    position: relative;
-    bottom: 18px;
-    margin-top: 0;
-} 
 nav {
     display: flex;
     background-color: white;
@@ -45,6 +32,7 @@ nav {
     top: 0;
     padding: 5px;
 }
+
 ul {
     display: flex;
     list-style: none;
@@ -55,22 +43,15 @@ li {
     padding: 13px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
 #logo {
     width: 17%;
     height: 17%;
-
     margin: 0 30px;
-   
 }
 
-/* ------- general setting ------- */
+/* ------- nav section ------- */
 
-/* ------ */
+/* ------- section 1 ------- */
  
 #main {
     background-image: url('http://sono.alwaysdata.net/melisa/landing.jpg');
@@ -91,12 +72,36 @@ a {
     margin-bottom: 100px;
 }
 
+h1 {
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+    margin: 5px;
+}
+
+hr {
+    width: 250px;
+    border:2px solid #00B172;
+    position: relative;
+    bottom: 18px;
+    margin-top: 0;
+} 
+
+/* ------- End section 1 ------- */
+
+/* ------- section 2 ------- */
 
 .container {
 display: flex;
 justify-content: center;
 justify-content: space-around;
 align-items: stretch;
+}
+
+h2 {
+    text-align: center;
+    padding: 0 25px;
+    margin-top: -15px;
 }
 
 .boxes h3 {
@@ -128,9 +133,13 @@ align-items: stretch;
     margin-top: 0;
 }
 
+/* ------- End section 2 ------- */
+
+/* ------- footer ------- */
+
 #footer {
     background-color: #00B172;
-    background-image: url('http://sono.alwaysdata.net/melisa/spotify.png');
+    background-image: url('http://sono.alwaysdata.net/melisa/spotify.png'); /* !!! I don't know if it's bugged or not, but some of the images won't work. So I uploaded them and used their link instead.*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: 136px 136px;
@@ -180,7 +189,10 @@ align-items: stretch;
 }
 #app img {
     width: 300px;
-    height: 520px;
+    max-width: 100%;
+    height: auto;
     margin-right: 90px;
     padding: 50px 0;
 } 
+
+/* ------- End footer ------- */
